@@ -1,8 +1,8 @@
 import assert from 'assert';
-import { test } from 'beater';
 import { spyFn } from '../src/spy-fn';
+import { Test, test } from './helper';
 
-const tests = [
+const tests: Test[] = [
   test('default call with args', async () => {
     const spyF = spyFn((...ns: number[]) => JSON.stringify(ns));
     assert.deepStrictEqual(spyF(123), '[123]');

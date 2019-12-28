@@ -1,4 +1,4 @@
-import { Test, run } from 'beater';
+import { Test, run } from './helper';
 import { tests as spyFnTests } from './spy-fn';
 
 const tests: Test[] = [
