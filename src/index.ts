@@ -1,3 +1,3 @@
-import { SpyFn, spyFn } from './spy-fn';
+import { SpyFn, spyFn } from "./spy-fn";
 
 export { SpyFn, spyFn };

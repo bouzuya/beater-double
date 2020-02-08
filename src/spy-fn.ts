@@ -8,7 +8,7 @@ const spyFn = <T extends Function>(f: T): SpyFn & T => {
     calls.push(args);
     return f.apply(null, args);
   };
-  Object.defineProperty(spy, 'calls', { value: calls });
+  Object.defineProperty(spy, "calls", { value: calls });
   return spy as any;
 };
 
